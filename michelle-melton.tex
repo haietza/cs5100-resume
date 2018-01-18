@@ -48,7 +48,7 @@
 \begin{staticcontents}{1}
 \hfill
 \tikz{%
-	\draw[loosely dotted,color=RoyalBlue,line width=1.5pt,yshift=0]
+	\draw[loosely dotted,color=BrickRed,line width=1.5pt,yshift=0]
 	(0,0) -- (0,\textheight);}%
 \hfill\mbox{}
 \end{staticcontents}
@@ -60,13 +60,13 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% define macros (for convience)
+% define macros (for convenience)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\Sep}{\vspace{1.5em}}
 \newcommand{\SmallSep}{\vspace{0.5em}}
 
 \newenvironment{AboutMe}
-	{\ignorespaces\textbf{\color{RoyalBlue} About me}}
+	{\ignorespaces\textbf{\color{BrickRed} About me}}
 	{\Sep\ignorespacesafterend}
 	
 \newcommand{\CVSection}[1]
@@ -74,7 +74,7 @@
 	\SmallSep\normalsize\normalfont}
 
 \newcommand{\CVItem}[1]
-	{\textbf{\color{RoyalBlue} #1}}
+	{\textbf{\color{BrickRed} #1}}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -84,37 +84,41 @@
 
 % Left frame
 %%%%%%%%%%%%%%%%%%%%
-\begin{figure}
-	\hfill
-	\includegraphics[width=0.6\columnwidth]{photo}
-	\vspace{-7cm}
-\end{figure}
-
 \begin{flushright}\small
-	Johnathan S. Doe \\
-	\url{jdoe@howtotex.com}  \\
-	\url{www.howtotex.com} \\
-	(555) 555-3333
+	Michelle Melton \\
+	\url{meltonml@appstate.edu}  \\
+	%\url{www.haietza.com} \\
+	(828) 262-7871
 \end{flushright}\normalsize
 \framebreak
 
 
 % Right frame
 %%%%%%%%%%%%%%%%%%%%
-\Huge\bfseries {\color{RoyalBlue} John Doe} \\
-\Large\bfseries  Graphics designer \\
+\Huge\bfseries {\color{BrickRed} Michelle Melton} \\
+\Large\bfseries  Web Developer / Programmer \\
 
 \normalsize\normalfont
 
 % About me
 \begin{AboutMe}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel bibendum metus. Proin rutrum pharetra molestie. Cras sollicitudin nulla nec leo lobortis in tristique purus pretium. Ut eu felis nulla. Pellentesque condimentum justo ut ligula feugiat nec facilisis tellus ultricies. Nullam sit amet dictum ipsum. Sed lacus neque, hendrerit eu rhoncus nec, pellentesque vitae sem.
+I am a Web Developer / Programmer in the Center for Academic Excellence (CAE) at Appalachian State University. My role involves developing and updating the academic web applications used on campus, including the learning management system. Before joining the CAE team, I worked with the Web Services group designing and building academic websites in the Drupal framework.\\\\
+Prior to coming to work for the university in 2010, I worked for several marketing, advertising, and design companies where I developed experience with marketing and advertising strategy, branding, public relations, project management, graphic design and art direction, as well as web development. I bring knowledge about strategic communication as well as design, usability, and accessibility to the application development CAE provides for campus.\\\\
+I have a Bachelor of Science in Business Administration and Marketing from the University of Baltimore, I have studied advertising at Maryland Institute College of Art, and I am currently working on a Master of Science in Computer Science at Appalachian State University. My professional interests are focused on web application design and development, and personally I enjoy rock climbing, kung fu, and crossword puzzles.
 \end{AboutMe}
 
 % Experience
 \CVSection{Experience}
-\CVItem{May 2010 - present, Lorem ipsum}\\
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel bibendum metus. Proin rutrum pharetra molestie. Cras sollicitudin nulla nec leo lobortis in tristique purus pretium. Ut eu felis nulla.
+\CVItem{April 2015 - present, Web Developer / Programmer\\
+Appalachian State University, Boone, NC}
+\begin{compactitem}[\color{BrickRed}$\circ$]
+	\item Modify, integrate, and support academic web applications
+	\item Maintain University LMS (Moodle)
+	\item Program and integrate new features, modify and update existing features within web applications
+	\item Contribute to design and implementation of system architecture for academic web applications
+	\item Provide expertise on design, usability and accessibility for academic web applications and technologically enhanced learning environments
+	\item Interface design for academic web applications
+\end{compactitem}
 \SmallSep
 
 \CVItem{Aug 2007 - Feb 2010, Vivamus vel}\\
@@ -123,8 +127,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel bibendum me
 
 % Education
 \CVSection{Education}
-\CVItem{2010 - present, Lorem ipsum dolor}\\
-MSc. Lorem ipsum, Cras sollicitudin
+\CVItem{2017 - present, Appalachian State University}\\
+Master of Science, Computer Science
 \SmallSep
 
 \CVItem{2007 - 2010, Lorem ipsum dolor}\\
@@ -135,11 +139,15 @@ MSc. Lorem ipsum, Cras sollicitudin
 Proin rutrum pharetra molestie. Cras sollicitudin nulla nec leo lobortis in tristique purus pretium. Ut eu felis nulla.
 \Sep
 
+\clearpage
+\framebreak
+\framebreak
+
 % Skills
 \CVSection{Skills}
 \CVItem{Platforms}
 \begin{multicols}{3}
-\begin{compactitem}[\color{RoyalBlue}$\circ$]
+\begin{compactitem}[\color{BrickRed}$\circ$]
 	\item Lorem 
 	\item Ipsum 
 \end{compactitem}
@@ -148,7 +156,7 @@ Proin rutrum pharetra molestie. Cras sollicitudin nulla nec leo lobortis in tris
 
 \CVItem{Computer software}
 \begin{multicols}{3}
-\begin{compactitem}[\color{RoyalBlue}$\circ$]
+\begin{compactitem}[\color{BrickRed}$\circ$]
 	\item Lorem 
 	\item Ipsum 
 	\item Dolor 
@@ -162,15 +170,12 @@ Proin rutrum pharetra molestie. Cras sollicitudin nulla nec leo lobortis in tris
 \end{multicols}
 \Sep 
 
-\CVSection{Something other}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel bibendum metus. Proin rutrum pharetra molestie. Cras sollicitudin nulla nec leo lobortis in tristique purus pretium. Ut eu felis nulla. Pellentesque condimentum justo ut ligula feugiat nec facilisis tellus ultricies. Nullam sit amet dictum ipsum. Sed lacus neque, hendrerit eu rhoncus nec, pellentesque vitae sem.
-
-\clearpage
-\framebreak
-\framebreak
-
-\CVSection{Something else}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel bibendum metus. Proin rutrum pharetra molestie. Cras sollicitudin nulla nec leo lobortis in tristique purus pretium. Ut eu felis nulla. Pellentesque condimentum justo ut ligula feugiat nec facilisis tellus ultricies. Nullam sit amet dictum ipsum. Sed lacus neque, hendrerit eu rhoncus nec, pellentesque vitae sem.
+\CVSection{Accomplishments}
+\begin{compactitem}[\color{BrickRed}$\circ$]
+	\item 2010 Service Award, Appalachian State University
+	\item Citation of Excellence, Baltimore Addy Awards
+	\item 2004 Guest Speaker, University of Baltimore
+\end{compactitem}
 \Sep
 
 % References
