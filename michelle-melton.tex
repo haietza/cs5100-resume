@@ -1,7 +1,7 @@
 %%% LaTeX Template: Designer's CV
 %%%
 %%% Source: http://www.howtotex.com/
-%%% Feel free to distribute this template, but please keep the referal to HowToTeX.com.
+%%% Feel free to distribute this template, but please keep the referral to HowToTeX.com.
 %%% Date: March 2012
 
 
@@ -11,17 +11,17 @@
 \documentclass[a4paper,12pt,final]{memoir}
 
 % misc
-\renewcommand{\familydefault}{bch}	% font
+\renewcommand{\familydefault}{bch}		% font
 \pagestyle{empty}					% no pagenumbering
-\setlength{\parindent}{0pt}			% no paragraph indentation
+\setlength{\parindent}{0pt}				% no paragraph indentation
 
 
 % required packages (add your own)
 \usepackage{flowfram}										% column layout
-\usepackage[top=1cm,left=1cm,right=1cm,bottom=1cm]{geometry}% margins
+\usepackage[top=1cm,left=1cm,right=1cm,bottom=1cm]{geometry}		% margins
 \usepackage{graphicx}										% figures
 \usepackage{url}											% URLs
-\usepackage[usenames,dvipsnames]{xcolor}					% color
+\usepackage[usenames,dvipsnames]{xcolor}						% color
 \usepackage{multicol}										% columns env.
 	\setlength{\multicolsep}{0pt}
 \usepackage{paralist}										% compact lists
@@ -36,9 +36,9 @@
 
 % frame setup (flowfram package)
 % left frame
-\newflowframe{0.2\textwidth}{\textheight}{0pt}{0pt}[left]
+\newflowframe{0.22\textwidth}{\textheight}{0pt}{0pt}[left]
 	\newlength{\LeftMainSep}
-	\setlength{\LeftMainSep}{0.2\textwidth}
+	\setlength{\LeftMainSep}{0.22\textwidth}
 	\addtolength{\LeftMainSep}{1\columnsep}
  
 % small static frame for the vertical line
@@ -57,6 +57,8 @@
 \addtolength{\LeftMainSep}{1.5pt}
 \addtolength{\LeftMainSep}{1\columnsep}
 \newflowframe{0.7\textwidth}{\textheight}{\LeftMainSep}{0pt}[main01]
+
+\urlstyle{same}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -85,18 +87,18 @@
 % Left frame
 %%%%%%%%%%%%%%%%%%%%
 \begin{flushright}\small
-	Michelle Melton \\
-	\url{meltonml@appstate.edu}  \\
-	%\url{www.haietza.com} \\
-	(828) 262-7871
+	Michelle Melton\\
+	\url{meltonml@appstate.edu}\\
+	%\url{www.haietza.com}\\
+	828-262-7871
 \end{flushright}\normalsize
 \framebreak
 
 
 % Right frame
 %%%%%%%%%%%%%%%%%%%%
-\Huge\bfseries {\color{BrickRed} Michelle Melton} \\
-\Large\bfseries  Web Developer / Programmer \\
+\Huge\bfseries {\color{BrickRed} Michelle Melton}\\
+\Large\bfseries  Web Developer / Programmer\\
 
 \normalsize\normalfont
 
@@ -155,8 +157,8 @@ Appnet Designs, Boone, NC}
 \CVItem{February 2001 - February 2004, Senior Designer\\
 Marriner Marketing Communications, Columbia, MD}
 \begin{compactitem}[\color{BrickRed}$\circ$]
-	\item Concept advertising ideas for Kellogg?s Food Away From Home
-	\item Brand development for Kellogg?s Food Away From Home
+	\item Concept advertising ideas for Kellogg's Food Away From Home
+	\item Brand development for Kellogg's Food Away From Home
 	\item Layout and design of advertising and collateral pieces for Ark Mutual Funds, Carolina Turkey, Cystic Fibrosis, Hershey, Marriott International, Perdue Farms and Phillips Foods
 \end{compactitem}
 \SmallSep
@@ -194,7 +196,7 @@ Continuing Education: Advertising Studies
 
 \CVItem{1995 - 1998, University of Baltimore}\\
 Bachelor of Science, Business Administration, Marketing\\
-Honors: Graduation Commencement Speaker, Summa Cum Laude, 4.0 GPA, Dean?s List, Mu Kappa Tau National Marketing Honor Society, Outstanding Marketing Student Award
+Honors: Graduation Commencement Speaker, Summa Cum Laude, 4.0 GPA, Dean's List, Mu Kappa Tau National Marketing Honor Society, Outstanding Marketing Student Award
 \SmallSep
 
 \CVItem{1993 - 1995, Anne Arundel Community College}\\
@@ -209,6 +211,7 @@ Honors: Summa Cum Laude, 4.0 GPA, Dean's List, Phi Theta Kappa Honor Society, Pr
 % Skills
 \CVSection{Skills}
 \begin{multicols}{3}
+\begin{flushleft}
 \begin{compactitem}[\color{BrickRed}$\circ$]
 	\item HTML
 	\item CSS
@@ -236,6 +239,7 @@ Honors: Summa Cum Laude, 4.0 GPA, Dean's List, Phi Theta Kappa Honor Society, Pr
 	\item Microsoft Office (Word, Excel, PowerPoint, Access)
 	\item Google Apps 
 \end{compactitem}
+\end{flushleft}
 \end{multicols}
 \Sep 
 
@@ -249,7 +253,7 @@ Honors: Summa Cum Laude, 4.0 GPA, Dean's List, Phi Theta Kappa Honor Society, Pr
 
 % References
 \CVSection{References}
-References upon request.
+References upon request
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % End document
