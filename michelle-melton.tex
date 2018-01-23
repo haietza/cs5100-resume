@@ -8,17 +8,16 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Document properties and packages
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass[a4paper,12pt,final]{memoir}
+\documentclass[letterpaper,10pt,final]{memoir}
 
 % misc
-\renewcommand{\familydefault}{bch}		% font
-\pagestyle{empty}					% no pagenumbering
-\setlength{\parindent}{0pt}				% no paragraph indentation
-
+\renewcommand{\familydefault}{\sfdefault}		% font
+\pagestyle{empty}						% no pagenumbering
+\setlength{\parindent}{0pt}					% no paragraph indentation
 
 % required packages (add your own)
 \usepackage{flowfram}										% column layout
-\usepackage[top=1cm,left=1cm,right=1cm,bottom=1cm]{geometry}		% margins
+\usepackage[top=1cm,left=0.5cm,right=0.5cm,bottom=1cm]{geometry}	% margins
 \usepackage{graphicx}										% figures
 \usepackage{url}											% URLs
 \usepackage[usenames,dvipsnames]{xcolor}						% color
@@ -26,6 +25,7 @@
 	\setlength{\multicolsep}{0pt}
 \usepackage{paralist}										% compact lists
 \usepackage{tikz}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Create column layout
@@ -36,10 +36,12 @@
 
 % frame setup (flowfram package)
 % left frame
-\newflowframe{0.22\textwidth}{\textheight}{0pt}{0pt}[left]
+\newflowframe{0.20\textwidth}{\textheight}{0pt}{0pt}[left]
 	\newlength{\LeftMainSep}
-	\setlength{\LeftMainSep}{0.22\textwidth}
+	\setlength{\LeftMainSep}{0.20\textwidth}
 	\addtolength{\LeftMainSep}{1\columnsep}
+
+\urlstyle{same}
  
 % small static frame for the vertical line
 \newstaticframe{1.5pt}{\textheight}{\LeftMainSep}{0pt}
@@ -58,18 +60,12 @@
 \addtolength{\LeftMainSep}{1\columnsep}
 \newflowframe{0.7\textwidth}{\textheight}{\LeftMainSep}{0pt}[main01]
 
-\urlstyle{same}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % define macros (for convenience)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newcommand{\Sep}{\vspace{1.5em}}
 \newcommand{\SmallSep}{\vspace{0.5em}}
-
-\newenvironment{AboutMe}
-	{\ignorespaces\textbf{\color{BrickRed} About me}}
-	{\Sep\ignorespacesafterend}
 	
 \newcommand{\CVSection}[1]
 	{\Large\textbf{#1}\par
@@ -89,7 +85,7 @@
 \begin{flushright}\small
 	Michelle Melton\\
 	\url{meltonml@appstate.edu}\\
-	%\url{www.haietza.com}\\
+	\url{github.com/haietza}\\
 	828-262-7871
 \end{flushright}\normalsize
 \framebreak
@@ -101,13 +97,6 @@
 \Large\bfseries  Web Developer / Programmer\\
 
 \normalsize\normalfont
-
-% About me
-\begin{AboutMe}
-I am a Web Developer / Programmer in the Center for Academic Excellence (CAE) at Appalachian State University. My role involves developing and updating the academic web applications used on campus, including the learning management system. Before joining the CAE team, I worked with the Web Services group designing and building academic websites in the Drupal framework.\\\\
-Prior to coming to work for the university in 2010, I worked for several marketing, advertising, and design companies where I developed experience with marketing and advertising strategy, branding, public relations, project management, graphic design and art direction, as well as web development. I bring knowledge about strategic communication as well as design, usability, and accessibility to the application development CAE provides for campus.\\\\
-I have a Bachelor of Science in Business Administration and Marketing from the University of Baltimore, I have studied advertising at Maryland Institute College of Art, and I am currently working on a Master of Science in Computer Science at Appalachian State University. My professional interests are focused on web application design and development, and personally I enjoy rock climbing, kung fu, and crossword puzzles.
-\end{AboutMe}
 
 % Experience
 \CVSection{Experience}
@@ -121,7 +110,7 @@ Appalachian State University, Boone, NC}
 	\item Provide expertise on design, usability and accessibility for academic web applications and technologically enhanced learning environments
 	\item Interface design for academic web applications
 \end{compactitem}
-\SmallSep
+\Sep
 
 \CVItem{May 2010 - April 2015, Lead CMS Migration Specialist\\
 Appalachian State University, Boone, NC}
@@ -134,11 +123,7 @@ Appalachian State University, Boone, NC}
 	\item Support University websites
 	\item Concept and design graphics for campus programs
 \end{compactitem}
-\SmallSep
-
-\clearpage
-\framebreak
-\framebreak
+\Sep
 
 \CVItem{July 2004 - May 2010, Creative Director\\
 Appnet Designs, Boone, NC}
@@ -152,7 +137,10 @@ Appnet Designs, Boone, NC}
 	\item Design and build layouts for tourism and hospitality websites
 	\item Create banner advertisements for area clients
 \end{compactitem}
-\SmallSep
+\Sep
+
+\CVItem{February 2004 - July 2004, Cross Country Travel}
+\Sep
 
 \CVItem{February 2001 - February 2004, Senior Designer\\
 Marriner Marketing Communications, Columbia, MD}
@@ -161,7 +149,7 @@ Marriner Marketing Communications, Columbia, MD}
 	\item Brand development for Kellogg's Food Away From Home
 	\item Layout and design of advertising and collateral pieces for Ark Mutual Funds, Carolina Turkey, Cystic Fibrosis, Hershey, Marriott International, Perdue Farms and Phillips Foods
 \end{compactitem}
-\SmallSep
+\Sep
 
 \CVItem{August 1998 - February 2001, Graphic Designer, Account Executive\\
 The Cyphers Agency, Annapolis, MD}
@@ -176,22 +164,24 @@ The Cyphers Agency, Annapolis, MD}
 	\item Work with Creative Director to develop targeted ad strategies
 	\item Handle public relations efforts for agency and clients
 \end{compactitem}
-\SmallSep
-
 \Sep
+
+\clearpage
+\framebreak
+\framebreak
 
 % Education
 \CVSection{Education}
 \CVItem{2017 - present, Appalachian State University}\\
-Master of Science, Computer Science
+Master of Science, Computer Science, 4.0 GPA
 \SmallSep
 
 \CVItem{2013 - 2017, Appalachian State University}\\
-Continuing Education: Undergraduate Computer Science
+Continuing Education: Undergraduate Computer Science, 4.0 GPA
 \SmallSep
 
 \CVItem{1999 - 2000, Maryland Institute College of Art}\\
-Continuing Education: Advertising Studies
+Continuing Education: Advertising Studies, 4.0 GPA
 \SmallSep
 
 \CVItem{1995 - 1998, University of Baltimore}\\
@@ -204,43 +194,40 @@ Associate of Arts, Marketing\\
 Honors: Summa Cum Laude, 4.0 GPA, Dean's List, Phi Theta Kappa Honor Society, Presidential Scholar Award Recipient
 \Sep
 
-\clearpage
-\framebreak
-\framebreak
+% Projects
+\CVSection{Projects}
+\CVItem{Wowza Ticket Validation}\\
+Ticket validation plugin for Wowza streaming server\\
+Java
+\SmallSep
+
+\CVItem{Grade Cleanup}\\
+Local Moodle plugin that allows grade history database entries older than a configurable setting to be deleted at a scheduled cron run\\
+PHP, MySQL
+\SmallSep
+
+\CVItem{ASU Moodle Theme}\\
+Custom Moodle theme for the Appalachian State University learning management system\\
+HTML, CSS, LESS, Bootstrap, PHP, JQuery, Mustache
+\SmallSep
+
+\CVItem{SQL Scripts}\\
+Bash scripts to split an SQL dump into individual files by table and import them with inclusion or exclusion\\
+Bash, MySQL
+\Sep
 
 % Skills
 \CVSection{Skills}
-\begin{multicols}{3}
-\begin{flushleft}
-\begin{compactitem}[\color{BrickRed}$\circ$]
-	\item HTML
-	\item CSS
-	\item Bootstrap
-	\item JavaScript
-	\item jQuery
-	\item PHP
-	\item Java
-	\item C
-	\item C++
-	\item Assembly
-	\item Bash
-	\item SQL/MySQL
-	\item Linux
-	\item Eclipse/Zend Studio
-	\item Google API
-	\item Drupal API
-	\item Moodle API
-	\item Vim
-	\item Git
-	\item Vagrant
-	\item VirtualBox
-	\item Limited .NET
-	\item Adobe (InDesign, Photoshop, Illustrator, Acrobat, Flash, Dreamweaver, Fireworks, Media Encoder)
-	\item Microsoft Office (Word, Excel, PowerPoint, Access)
-	\item Google Apps 
-\end{compactitem}
-\end{flushleft}
-\end{multicols}
+Languages: HTML, CSS, Bootstrap, JavaScript, JQuery, PHP, Java, C, C++, Assembly, Bash, Google API, Drupal API, Moodle API, Vim, Git
+\SmallSep
+
+Platforms: Linux, Mac OS, Windows
+\SmallSep
+
+Databases: SQL/MySQL
+\SmallSep
+
+Software: Vagrant, VirtualBox, Eclipse/Zend Studio, Adobe (InDesign, Photoshop, Illustrator, Acrobat, Flash, Dreamweaver, Fireworks, Media Encoder), Microsoft Office (Word, Excel, PowerPoint, Access), Google Apps
 \Sep 
 
 \CVSection{Accomplishments}
@@ -249,11 +236,6 @@ Honors: Summa Cum Laude, 4.0 GPA, Dean's List, Phi Theta Kappa Honor Society, Pr
 	\item Citation of Excellence, Baltimore Addy Awards
 	\item 2004 Guest Speaker, University of Baltimore
 \end{compactitem}
-\Sep
-
-% References
-\CVSection{References}
-References upon request
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % End document
